@@ -4,40 +4,37 @@ import { Heart, Camera, Star, Sparkles } from 'lucide-react';
 function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Placeholder images from Pexels - you'll replace these with your actual photos
   const collageImages = [
-    'images/conejitos.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/foto 1.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/foto 2.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/foto 3.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/Kath 1.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath abuelito.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/Kath bonita.jpg?auto=compress&cs=tinysrgb&w=400', 
-    'images/kath y masha.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses 1.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses 2.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses 3.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses 4.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses 5.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses 6.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y ramses.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y saniel 1.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y saniel 2.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y saniel 3.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/kath y saniel 4.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/Kath y saniel.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/Kath.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/manos juntas.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/saniel abuelito.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/cafe.jpg?auto=compress&cs=tinysrgb&w=400',
-    'images/pizza.jpg?auto=compress&cs=tinysrgb&w=400',
+    '/images/conejitos.jpg',
+    '/images/foto 1.jpg',
+    '/images/foto 2.jpg',
+    '/images/foto 3.jpg',
+    '/images/Kath 1.jpg',
+    '/images/kath abuelito.jpg',
+    '/images/Kath bonita.jpg', 
+    '/images/kath y masha.jpg',
+    '/images/kath y ramses 1.jpg',
+    '/images/kath y ramses 2.jpg',
+    '/images/kath y ramses 3.jpg',
+    '/images/kath y ramses 4.jpg',
+    '/images/kath y ramses 5.jpg',
+    '/images/kath y ramses 6.jpg',
+    '/images/kath y ramses.jpg',
+    '/images/kath y saniel 1.jpg',
+    '/images/kath y saniel 2.jpg',
+    '/images/kath y saniel 3.jpg',
+    '/images/kath y saniel 4.jpg',
+    '/images/Kath y saniel.jpg',
+    '/images/Kath.jpg',
+    '/images/manos juntas.jpg',
+    '/images/saniel abuelito.jpg',
+    '/images/cafe.jpg',
+    '/images/pizza.jpg',
   ];
 
-
-  // Kissing photos section - 2 photos
   const kissingPhotos = [
-    'images/besando a kath.jpg?auto=compress&cs=tinysrgb&w=600',
-    'images/Besando a Saniel.jpg?auto=compress&cs=tinysrgb&w=600',
+    '/images/besando a kath.jpg',
+    '/images/Besando a Saniel.jpg',
   ];
 
   return (
@@ -59,8 +56,6 @@ function App() {
       {/* Photo Collage */}
       <section className="px-4 mb-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
-          </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
             {collageImages.map((image, index) => (
               <div
@@ -85,7 +80,7 @@ function App() {
         </div>
       </section>
 
-      {/* Nuestros Besos Section */}
+      {/* Nuestros Besos */}
       <section className="px-4 mb-20">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -117,7 +112,7 @@ function App() {
         </div>
       </section>
 
-      {/* Niño Feliz Section */}
+      {/* Niño Feliz */}
       <section className="px-4 mb-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-orange-500/10 to-sky-500/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
@@ -132,10 +127,10 @@ function App() {
               <div className="md:w-1/2">
                 <div
                   className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 group"
-                  onClick={() => setSelectedImage('images/niño feliz.jpg?auto=compress&cs=tinysrgb&w=600')}
+                  onClick={() => setSelectedImage('/images/niño feliz.jpg')}
                 >
                   <img
-                    src="images/niño feliz.jpg?auto=compress&cs=tinysrgb&w=600"
+                    src="/images/niño feliz.jpg"
                     alt="Niño Feliz"
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -163,7 +158,7 @@ function App() {
         </div>
       </section>
 
-      {/* Primera Foto Juntos Section */}
+      {/* Primera Foto Juntos */}
       <section className="px-4 mb-20">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-sky-500/10 to-orange-500/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
@@ -178,10 +173,10 @@ function App() {
               <div className="md:w-1/2">
                 <div
                   className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 group"
-                  onClick={() => setSelectedImage('images/primera foto juntos.jpg?auto=compress&cs=tinysrgb&w=600')}
+                  onClick={() => setSelectedImage('/images/primera foto juntos.jpg')}
                 >
                   <img
-                    src="images/primera foto juntos.jpg?auto=compress&cs=tinysrgb&w=600"
+                    src="/images/primera foto juntos.jpg"
                     alt="Primera Foto Juntos"
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -242,33 +237,32 @@ function App() {
         </div>
       </section>
 
-{/* Image Modal */}
-{selectedImage && (
-  <div
-    className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-8"
-    onClick={() => setSelectedImage(null)}
-  >
-    <div 
-      className="relative bg-white rounded-lg shadow-2xl max-w-5xl max-h-[90vh] overflow-hidden"
-      onClick={(e) => e.stopPropagation()}
-    >
-      {/* Botón de cerrar */}
-      <button
-        onClick={() => setSelectedImage(null)}
-        className="absolute -top-2 -right-2 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold transition-colors duration-200 shadow-xl border-2 border-white"
-      >
-        ✕
-      </button>
-      
-      {/* Imagen */}
-      <img
-        src={selectedImage}
-        alt="Imagen ampliada"
-        className="w-full h-full object-contain max-h-[85vh]"
-      />
-    </div>
-  </div>
-)}
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-8"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div 
+            className="relative bg-white rounded-lg shadow-2xl max-w-5xl max-h-[90vh] overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-10 bg-white hover:bg-gray-100 text-red-500 rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold transition-all duration-200 shadow-lg border border-red-300"
+            aria-label="Cerrar imagen"
+          >
+            ✕
+          </button>
+
+            <img
+              src={selectedImage}
+              alt="Imagen ampliada"
+              className="w-full h-full object-contain max-h-[85vh]"
+            />
+          </div>
+        </div>
+      )}
 
       {/* Footer */}
       <footer className="text-center py-8 px-4">
