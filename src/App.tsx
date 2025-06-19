@@ -198,7 +198,7 @@ function App() {
               </div>
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
-                  Me muero de ansias por llenar miles de colecciones juntos
+                  Me muero de ganas por llenar miles de colecciones juntos
                 </p>
                 <div className="flex justify-center md:justify-start mt-4">
                   <div className="flex space-x-2">
