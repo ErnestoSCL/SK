@@ -56,7 +56,7 @@ function App() {
       <header className="text-center py-12 px-4">
         <div className="flex justify-center items-center mb-4">
           <Sparkles className="w-8 h-8 text-orange-500 mr-3 animate-pulse" />
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-sky-500 to-orange-500 bg-clip-text text-transparent">
+<h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-orange-500 to-sky-500 bg-clip-text text-transparent">
             SaniKath
           </h1>
           <Sparkles className="w-8 h-8 text-sky-500 ml-3 animate-pulse" />
