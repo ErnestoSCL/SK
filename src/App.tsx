@@ -139,7 +139,7 @@ function App() {
               </div>
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
-                  Gracias por devolverme la sonrisa
+                  Gracias por devolverme una sonrisa a mi rostro
                 </p>
                 <div className="flex justify-center md:justify-start mt-4">
                   <div className="flex space-x-2">
