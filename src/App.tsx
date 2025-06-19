@@ -6,40 +6,38 @@ function App() {
 
   // Placeholder images from Pexels - you'll replace these with your actual photos
   const collageImages = [
-    'https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1024998/pexels-photo-1024998.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=300',
-    'https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1024999/pexels-photo-1024999.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322185/pexels-photo-1322185.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2253871/pexels-photo-2253871.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1025000/pexels-photo-1025000.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322186/pexels-photo-1322186.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2253872/pexels-photo-2253872.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1025001/pexels-photo-1025001.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2379007/pexels-photo-2379007.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322187/pexels-photo-1322187.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2253873/pexels-photo-2253873.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1025002/pexels-photo-1025002.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2379008/pexels-photo-2379008.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322188/pexels-photo-1322188.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2253874/pexels-photo-2253874.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1025003/pexels-photo-1025003.jpg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2379009/pexels-photo-2379009.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1322189/pexels-photo-1322189.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/2253875/pexels-photo-2253875.jpeg?auto=compress&cs=tinysrgb&w=400',
-    'https://images.pexels.com/photos/1025004/pexels-photo-1025004.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/conejitos.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/foto 1.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/foto 2.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/foto 3.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/Kath 1.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath abuelito.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/Kath bonita.jpg?auto=compress&cs=tinysrgb&w=400', 
+    'images/kath y masha.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses 1.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses 2.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses 3.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses 4.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses 5.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses 6.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y ramses.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y saniel 1.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y saniel 2.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y saniel 3.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/kath y saniel 4.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/Kath y saniel.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/Kath.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/manos juntas.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/saniel abuelito.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/cafe.jpg?auto=compress&cs=tinysrgb&w=400',
+    'images/pizza.jpg?auto=compress&cs=tinysrgb&w=400',
   ];
+
 
   // Kissing photos section - 2 photos
   const kissingPhotos = [
-    'https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpg?auto=compress&cs=tinysrgb&w=600'
+    'images/besando a kath.jpg?auto=compress&cs=tinysrgb&w=600',
+    'images/Besando a Saniel.jpg?auto=compress&cs=tinysrgb&w=600',
   ];
 
   return (
@@ -62,7 +60,6 @@ function App() {
       <section className="px-4 mb-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
-            Nuestros Recuerdos
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4">
             {collageImages.map((image, index) => (
@@ -135,10 +132,10 @@ function App() {
               <div className="md:w-1/2">
                 <div
                   className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 group"
-                  onClick={() => setSelectedImage('https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=600')}
+                  onClick={() => setSelectedImage('images/niño feliz.jpg?auto=compress&cs=tinysrgb&w=600')}
                 >
                   <img
-                    src="https://images.pexels.com/photos/1322184/pexels-photo-1322184.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="images/niño feliz.jpg?auto=compress&cs=tinysrgb&w=600"
                     alt="Niño Feliz"
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -181,10 +178,10 @@ function App() {
               <div className="md:w-1/2">
                 <div
                   className="relative overflow-hidden rounded-2xl shadow-2xl cursor-pointer transform transition-all duration-500 hover:scale-105 group"
-                  onClick={() => setSelectedImage('https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600')}
+                  onClick={() => setSelectedImage('images/primera foto juntos.jpg?auto=compress&cs=tinysrgb&w=600')}
                 >
                   <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="images/primera foto juntos.jpg?auto=compress&cs=tinysrgb&w=600"
                     alt="Primera Foto Juntos"
                     className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -245,27 +242,33 @@ function App() {
         </div>
       </section>
 
-      {/* Image Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <img
-              src={selectedImage}
-              alt="Imagen ampliada"
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-            />
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-colors duration-200"
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-      )}
+{/* Image Modal */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-8"
+    onClick={() => setSelectedImage(null)}
+  >
+    <div 
+      className="relative bg-white rounded-lg shadow-2xl max-w-5xl max-h-[90vh] overflow-hidden"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Botón de cerrar */}
+      <button
+        onClick={() => setSelectedImage(null)}
+        className="absolute -top-2 -right-2 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold transition-colors duration-200 shadow-xl border-2 border-white"
+      >
+        ✕
+      </button>
+      
+      {/* Imagen */}
+      <img
+        src={selectedImage}
+        alt="Imagen ampliada"
+        className="w-full h-full object-contain max-h-[85vh]"
+      />
+    </div>
+  </div>
+)}
 
       {/* Footer */}
       <footer className="text-center py-8 px-4">
