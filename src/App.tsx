@@ -52,7 +52,7 @@ function App() {
           <Sparkles className="w-8 h-8 text-sky-500 ml-3 animate-pulse" />
         </div>
         <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-          Una colección de momentos que capturan nuestro amor
+          Para mi persona favorita, Kath. Este es un pequeño homenaje a todos los momentos que hemos compartido juntos. Espero que disfrutes de este viaje por nuestras memorias y que cada imagen te recuerde lo mucho que significas para mí.
         </p>
       </header>
 
